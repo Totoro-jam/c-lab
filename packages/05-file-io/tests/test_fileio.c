@@ -73,8 +73,8 @@ static void test_read_all(void) {
 
 static void test_write_and_read_all(void) {
     const char *path = "/tmp/c_lab_test_write.tmp";
-    const char *data = "binary\x00data\x01here";
-    size_t data_len = 16;
+    const char data[] = "binary\x00data\x01here";
+    size_t data_len = sizeof(data) - 1;
 
     assert(file_write_all(path, data, data_len) == 0);
 

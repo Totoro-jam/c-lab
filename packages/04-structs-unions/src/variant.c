@@ -1,6 +1,7 @@
 /*
  * variant.c — Tagged union and opaque struct implementations.
  */
+#define _POSIX_C_SOURCE 200809L
 #include <stdlib.h>
 #include <string.h>
 

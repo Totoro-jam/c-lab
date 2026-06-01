@@ -3,6 +3,7 @@
  *
  * Hash function: FNV-1a (simple, good distribution for strings).
  */
+#define _POSIX_C_SOURCE 200809L
 #include <stdlib.h>
 #include <string.h>
 #include "hashmap.h"
